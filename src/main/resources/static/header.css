@@ -1,0 +1,82 @@
+.product {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 300px;
+	margin: auto;
+	text-align: center;
+	font-family: arial;
+	box-sizing: content-box;
+	width: 300px;
+	height: 500px;
+	padding: 30px;
+	border: 1px solid;
+	border-color: white;
+	border-radius: 10px;
+	border-spacing: 5px; 
+	display : inline-block;
+	vertical-align: top;
+	display: inline-block;
+	
+}
+
+.price {
+	color: white;
+	font-size: 20px;
+	border: 1px solid;
+	border-color: white;
+	border-radius: 10px;
+	border-spacing: 1px; 
+	display : inline-block;
+	
+}
+
+.card button {
+	border: none;
+	outline: 0;
+	padding: 12px;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+}
+
+.card button:hover {
+	opacity: 0.7;
+	
+}
+
+body {
+	background-image: url("/images/back.jpeg");
+	height: 100%;
+/* 	background-position: center;  */
+ 	background-repeat: no-repeat; 
+ 	background-size: cover; */
+	position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+h1 {
+	color: white;
+}
+
+p {
+	color: white;
+}
+#name{
+	text-align: center;
+	
+}
+#planet{
+	color:red;
+}
+#button{
+	color:white;
+	border: 1px solid;
+	border-radius: 20px;
+	border-spacing: 15px; 
+	display : inline-block;
+}

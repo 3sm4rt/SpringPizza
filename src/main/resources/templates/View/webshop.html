@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="https://www.thymeleaf.org">
+
+<head th:insert="fragment/Head :: Login">
+</head>
+<body>
+
+
+	<h1 id="name">
+		Pizza <span id="planet"> Planet</span>
+	</h1>
+	
+	<div th:each="user : ${user}">
+		<h1 th:text="${user.username}"></h1>
+
+	</div>
+
+
+	<div class="product" th:each="pizza : ${pizzas}">
+		<img id="img" th:src="@{${'/images/' + pizza.img + '.png'}}" />
+		<h1 th:text="${pizza.pizzaName}"></h1>
+		<p class="price" th:text="${pizza.cost}"></p>
+		<p th:text="${pizza.description}">.</p>
+
+		
+			<p>
+			<a th:href="@{/cart/} + ${pizza.pizzaId} +'/'+ ${user.userId}" id="button">Kosárba Teszem</a>
+				
+			</p>
+		
+
+
+	</div>
+
+</body>
+</html>
